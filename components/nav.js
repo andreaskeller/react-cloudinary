@@ -1,9 +1,12 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const links = [
-  { href: 'https://github.com/vercel/next.js', label: 'GitHub' },
-  { href: 'https://nextjs.org/docs', label: 'Docs' },
-]
+  {
+    href: "https://github.com/andreaskeller/react-cloudinary",
+    label: "GitHub",
+  },
+  { href: "https://andreaskeller.name/blog/react-cloudinary", label: "Docs" },
+];
 
 export default function Nav() {
   return (
@@ -17,7 +20,12 @@ export default function Nav() {
         <ul className="flex justify-between items-center space-x-4">
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
-              <a href={href} className="btn-blue no-underline">
+              <a
+                href={href}
+                className="btn-blue no-underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {label}
               </a>
             </li>
@@ -25,5 +33,5 @@ export default function Nav() {
         </ul>
       </ul>
     </nav>
-  )
+  );
 }

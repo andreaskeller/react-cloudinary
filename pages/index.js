@@ -1,14 +1,18 @@
-import Nav from '../components/nav'
+import ImageUploader from "../components/image-uploader";
+import Nav from "../components/nav";
 
 export default function IndexPage() {
   return (
     <div>
       <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-accent-1">
-          Next.js + Tailwind CSS
+      <div className="py-10">
+        <h1 className="text-3xl text-center font-bold">
+          Upload image to Cloudinary
         </h1>
+        <div className="py-10 flex justify-center items-center">
+          <ImageUploader />
+        </div>
       </div>
     </div>
-  )
+  );
 }
