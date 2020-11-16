@@ -5,7 +5,10 @@ const links = [
     href: "https://github.com/andreaskeller/react-cloudinary",
     label: "GitHub",
   },
-  { href: "https://andreaskeller.name/blog/react-cloudinary", label: "Docs" },
+  {
+    href: "https://andreaskeller.name/blog/react-upload-images-cloudinary",
+    label: "Docs",
+  },
 ];
 
 export default function Nav() {
